@@ -82,7 +82,7 @@ function tmr($tmr){
 		print "\r                       \r";
 		$res=$timr-time();
 		if($res < 1){break;}
-		print date('i:s',$res);sleep(1);
+		print b."  | ".p.date('i:s',$res);sleep(1);
 	}
 }
 function x($x,$str){
