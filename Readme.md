@@ -1,4 +1,4 @@
-# BITSFREE
+# BITSSURF
 
 [![Youtobe: iewil](https://img.shields.io/youtube/channel/subscribers/UCvBSqRaT6nsPvtl8m6GaQpg?style=social)](https://youtube.com/c/iewil)
 [![Github: iewil](https://img.shields.io/github/followers/iewilmaestro?style=social)](https://github.com/iewilmaestro)
@@ -6,7 +6,7 @@
 <br>
 
 ### Register
-- [ ] Website Bitsfree -> [Rergister here](https://bitsfree.net/?r=46154)
+- [ ] Website Bitssurf -> [Rergister here](https://www.bitssurf.com/ref/iewilmaestro)
 - [ ] Api Anycaptcha -> [Rergister here](https://anycaptcha.com?referral=4448)
 
 ### Instalasi
@@ -15,8 +15,8 @@ $ pkg update && pkg upgrade
 $ pkg install git
 $ pkg install php
 $ termux-setup-storage
-$ git clone https://github.com/iewilmaestro/bitsfree.net
-$ cd bitsfree.net
+$ git clone https://github.com/iewilmaestro/Bitssurf
+$ cd Bitssurf
 $ php bot.php
 ```
 ![Donation: iewil](https://img.shields.io/badge/💰-Donation-blue?style=flat-square)<br>
