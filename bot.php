@@ -143,11 +143,11 @@ function login($username,$password,$apikey){
 	$csrf = explode('"',explode('name="csrfToken" value="',$r)[1])[0];
 	$captcha = RecaptchaV2('https://www.bitssurf.com/login',$apikey);
 	$data = [
-		"csrfToken"				=> $csrf,
-		"username"				=> $username,
-		"password"				=> $password,
+		"csrfToken"		=> $csrf,
+		"username"		=> $username,
+		"password"		=> $password,
 		"g-recaptcha-response"	=> $captcha,
-		"remember"				=> "on"
+		"remember"		=> "on"
 	];
 	return curl('https://www.bitssurf.com/login',h(),$data)[1];
 }
@@ -177,9 +177,9 @@ while(true){
 	$csrf = explode('"',explode('name="csrfToken" value="',$r)[1])[0];
 	$captcha = RecaptchaV2('https://www.bitssurf.com/faucet',$apikey);
 	$data = [
-		"csrfToken" 			=> $csrf,
+		"csrfToken" 		=> $csrf,
 		"g-recaptcha-response"	=> $captcha,
-		"claim"					=> ""
+		"claim"			=> ""
 	];
 	$r = curl('https://www.bitssurf.com/faucet',h(),$data)[1];
 	$notif=explode("',",explode("sendNotify('",$r)[1])[0];
