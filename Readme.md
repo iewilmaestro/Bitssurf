@@ -23,3 +23,4 @@ $ php bot.php
 ![BTC: iewil](https://img.shields.io/badge/BTC-18jswG2t9EZrnHju5dyiYw1yGbkcrTSgJg-blue?style=flat-square&logo=bitcoin)
 ![Paypal: iewil](https://img.shields.io/badge/Paypal-Purna.iera@gmail.com-blue?style=flat-square&logo=paypal)
 ![Dana: iewil](https://img.shields.io/badge/Dana-085819008551-blue?style=flat-square&logo=idr)
+![Anycaptcha: iewil](https://img.shields.io/badge/Anycaptcha-iewilmaestro-blue?style=flat-square&logo=Anycaptcha)
