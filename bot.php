@@ -138,6 +138,12 @@ function RecaptchaV2($siteurl,$apikey){
 		}
 	}
 }
+function timezone(){
+	$t = json_decode(file_get_contents("http://ip-api.com/json"),1)["timezone"];
+	if($t){
+		date_default_timezone_set($t);
+	}
+}
 function login($username,$password,$apikey){
 	$r = curl('https://www.bitssurf.com/login',h())[1];
 	$csrf = explode('"',explode('name="csrfToken" value="',$r)[1])[0];
@@ -151,6 +157,7 @@ function login($username,$password,$apikey){
 	];
 	return curl('https://www.bitssurf.com/login',h(),$data)[1];
 }
+timezone();
 $uagent = uagent();
 bn();
 $username = Save('Username');
@@ -188,7 +195,7 @@ while(true){
 		print x($x+=1,h.strip_tags($suk).n);
 		$r = curl('https://www.bitssurf.com/account',h())[1];
 		$bal = explode('</span>',explode('<span id="balance">',$r)[1])[0];
-		print x($x+=1,h."Balance  : ".k.$bal.n);
+		print x($x+=1,c."[".u.date('H:i:s').c."]".h."Balance  : ".k.$bal.n);
 		print line($x+=1);
 	}elseif($notif=="danger"){
 		$danger = trim(strip_tags(explode("');",explode("sendNotify('danger', '",$r)[1])[0]));
